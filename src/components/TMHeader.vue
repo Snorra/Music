@@ -7,9 +7,10 @@
         class="header_btn header_btn_back"
         @click="goBack"
         >&lt;返回</div>
-      <div class="header_cont flex">student</div>
+      <div class="header_cont flex">觉对音悦</div>
+      <span class="sp">TM</span>
       <div class="header_btn header_btn_cart"></div>
-      <p class="p1">…</p>
+      <!--<p class="p1">…</p>-->
     </div>
   </header>
 </template>
@@ -31,6 +32,7 @@
     top: 0.2rem;
     right:0.3rem;
     font-size: 0.5rem;
+    color: #333333;
   }
   .header_inner {
     position: fixed;
@@ -50,6 +52,7 @@
     width: 2.0rem;
     height: 100%;
     background-repeat: no-repeat;
+    color: #333333;
   }
   .header_btn_back {
     line-height: 1rem;
@@ -59,10 +62,18 @@
     text-align: center;
     padding: 0 0.4rem;
     line-height: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: #333333;
+    position: relative;
+  }
+  .sp {
+    vertical-align: super;
+    position: absolute;
+    top: 0.35rem;
+    left: 4.7rem;
   }
   .header_btn:active {
     opacity: 0.7;
@@ -72,8 +83,8 @@
   export default {
     methods: {
       goBack: function(){
-    window.history.back();
-  }
-  }
+        window.history.back();
+      }
+    }
   }
 </script>

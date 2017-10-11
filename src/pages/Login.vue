@@ -78,7 +78,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .container {
     max-width: 640px;
     height: 568px;
